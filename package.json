@@ -1,5 +1,5 @@
 {
-  "name": "magento-2-api-client",
+  "name": "magento-2-rest-client",
   "version": "1.0.0",
   "description": "An library to send request to Magento Stores",
   "main": "index.js",
@@ -28,3 +28,4 @@
     "request": "^2.88.0"
   }
 }
+

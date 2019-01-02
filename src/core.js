@@ -52,13 +52,15 @@ class Core {
         }, (error, response, body)=>{
             console.log('Response received.');
             if (error) {
-                console.log('Error occured: ' + error);
+                console.log('Error occured: ',error);
                 return cb(error);
             }
             
             if (!self.httpCallSucceeded(response)) {
                 const errorMessage = self.errorString(body.message, body.parameters);
-                console.log('API call failed: ',errorMessage);
+                console.log('API call failed error: ',error);
+                console.log('API call failed body: ',body);
+                console.log('API call failed failed: ',errorMessage);
                 return cb(errorMessage);
             }
 
@@ -95,8 +97,7 @@ class Core {
         const self = this;
 
         const {
-            url, 
-            order
+            url
         } = data;
 
         const options = {
