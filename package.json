@@ -16,7 +16,7 @@
     "rest"
   ],
   "author": "Leonardo Larrea<leonardo.larrea1@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jalarrea/magento-2-api-client/issues"
   },
